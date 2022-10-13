@@ -1,17 +1,23 @@
-Beatles = []
+''''
+Descripción: 
+Autor: German Venado
+Fecha: 29 sep 2022
+'''
 
+Beatles = []
 print("Paso 1: ", Beatles)
 
-Beatles.append('Jhon Lennon')
-Beatles.append('Paul McCartney')
-Beatles.append('George Harrison')
+Beatles.append("Jhon Lennon")
+Beatles.append("Paul McCartney")
+Beatles.append("George Harrison")
 print("Paso 2: ", Beatles)
 
 for i in range(2):
     Beatles.append(input('Agrega otro miembro: '))
 print("Paso 3: ", Beatles)
 
-del Beatles[3, 4]
+del Beatles[3]
+del Beatles[3]
 print("Paso 4: ", Beatles)
 
 Beatles.insert(0, 'Ringo Start')
