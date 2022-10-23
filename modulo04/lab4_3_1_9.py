@@ -1,7 +1,7 @@
 ''''
 Descripción: Verificar si un número es primo o no.
 Autor: German Venado
-Fecha: 06 oct 2022
+Fecha: 21 oct 2022
 '''
 
 def is_prime(num):

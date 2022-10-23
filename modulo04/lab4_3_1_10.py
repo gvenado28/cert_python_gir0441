@@ -1,18 +1,18 @@
 ''''
-Descripción: Programa que hará varios tipos de conversiones (m/km, l/gal, etc.).
+Descripción: Programa que hará conversiones (km/mill, l/gal).
 Autor: German Venado
-Fecha: 06 oct 2022
+Fecha: 21 oct 2022
 '''
-
+#definir la variable para el dato de los litros
 def liters_100km_to_miles_gallon(liters):
-    galon = liters / 3.785411784
-    milla = 100 * 1000 / 1609.344
-    return milla / galon
+    milla = (100*1000) / 1609.344 # Conversión de milla, dividiendo los 100km entre los metros que equivalen a una milla.
+    galon = liters / 3.785411784 # Conversión de galon, dividiendo los litros entre los litros que equivalen a un galon.
+    return milla / galon # Obtener el valor de milla por galon (mpg).
     
 def miles_gallon_to_liters_100km(millas):
-    km_100 = millas * 1609.344 / 1000 / 100
-    litros = 3.785411784
-    return litros / km_100
+    gal_lit = 3.785411784 # Cantidad de litros en galones.
+    km_100 = millas * 1609.344 / 100 / 1000 # Conversión de millas a 100km.
+    return gal_lit / km_100 # Valor viceverso de litros sobre 100km (l/100km).
 
 print(liters_100km_to_miles_gallon(3.9))
 print(liters_100km_to_miles_gallon(7.5))
